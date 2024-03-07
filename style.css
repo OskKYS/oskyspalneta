@@ -1,4 +1,36 @@
-
+#Button {
+  position: absolute;
+  top: 10%;
+  left: 85%;
+  background-color: #000000;
+  color: #ff0000;
+  z-index: 60;
+  padding: 10px 20px;
+  font-family: fantasy;
+  font-size: 19px;
+  cursor: pointer;
+  border-color: #ff0000;
+  border-radius:20px; 
+}
+.obdelnik {
+  z-index: 60;
+  width: 1890px;
+  height: 180px;
+  background-color: transparent;
+  filter: blur(3px);
+  border: 5px solid #ff0000; 
+  position: relative;
+  top: 61.2%;
+  left: -11px;
+}
+.line {
+  position: absolute;
+  top: 99.1%;
+  display: block;
+  width: 100%;
+  height: 13px;
+  background-color: #530000;
+}
 
 .space {
    
@@ -7,7 +39,7 @@
 }
 .background {
     z-index: -3;
-    background-color: #060608;
+    background-color: #000000;
     position: absolute;
     top: 100%;
 }
@@ -156,15 +188,16 @@
   }
   
   body {
-    background: linear-gradient(to right, rgb(71, 0, 0) 30%, black 70%);
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100dvw;
-    background-color: var(--system-color-dark);
-  
+    overflow-y: scroll;
+background: linear-gradient(to top, #530000 20%, black 70%);
+overflow-x: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100vw;
+background-color: var(--system-color-dark);
+
   
     & .solar-system {
         position: absolute;
@@ -403,3 +436,21 @@
       }
   }*/
   
+
+  .neon {
+    z-index: 80;
+    position: absolute;
+    top: 970px;
+    left: 1%;
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: #ff0000;
+    text-shadow:
+      0 0 10px #ff0000,
+      0 0 20px #ff0000,
+      0 0 40px #ff0000,
+      0 0 100px #ff0000,
+ 
+  }
+
+

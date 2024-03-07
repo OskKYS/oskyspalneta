@@ -1,15 +1,22 @@
+function scrollDown() {
+  // Smooth scroll down to the bottom of the page
+  window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
+  });
+}
 const deg = (a) => Math.PI / 180 * a;
 const rand = (v1, v2) => Math.floor(v1 + Math.random() * (v2 - v1));
 const opt = {
   particles: window.innerWidth / 500 ? 1000 : 500,
   noiseScale: 0.009,
   angle: Math.PI / 180 * -90,
-  h1: rand(0, 360),
-  h2: rand(0, 360),
-  s1: rand(20, 90),
-  s2: rand(20, 90),
-  l1: rand(30, 80),
-  l2: rand(30, 80),
+  h1: 0,
+  h2: 0,
+  s1: 80,
+  s2: 80,
+  l1: 40,
+  l2: 40,
   strokeWeight: 1.2,
   tail: 60,
 };
@@ -17,12 +24,12 @@ const Particles = [];
 let time = 0;
 
 document.body.addEventListener('click', () => {
-  opt.h1 = rand(0, 360);
-  opt.h2 = rand(0, 360);
-  opt.s1 = rand(20, 90);
-  opt.s2 = rand(20, 90);
-  opt.l1 = rand(30, 80);
-  opt.l2 = rand(30, 80);
+  opt.h1 = 0;
+  opt.h2 = 0;
+  opt.s1 = 80;
+  opt.s2 = 80;
+  opt.l1 = 40;
+  opt.l2 = 40;
   opt.angle += deg(random(60, 60)) * (Math.random() > .5 ? 1 : -1);
 
   for (let p of Particles) {
@@ -151,7 +158,6 @@ function draw() {
 Resize
 --------------------*/
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
+
+
 
