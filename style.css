@@ -1,4 +1,4 @@
-#Button {
+#button {
   position: absolute;
   top: 10%;
   left: 85%;
@@ -9,20 +9,22 @@
   font-family: fantasy;
   font-size: 19px;
   cursor: pointer;
-  border-color: #ff0000;
-  border-radius:20px; 
+  border: 2px solid #ff0000; /* Zde byl chybně uveden border-color */
+  border-radius: 20px;
 }
+
 .obdelnik {
   z-index: 60;
   width: 1890px;
   height: 180px;
   background-color: transparent;
   filter: blur(3px);
-  border: 5px solid #ff0000; 
+  border: 5px solid #ff0000;
   position: relative;
   top: 61.2%;
   left: -11px;
 }
+
 .line {
   position: absolute;
   top: 99.1%;
@@ -33,146 +35,160 @@
 }
 
 .space {
-   
-    width: 100%;
-    height: 1000px;
+  width: 100%;
+  height: 1000px;
 }
+
 .background {
-    z-index: -3;
-    background-color: #000000;
-    position: absolute;
-    top: 100%;
+  z-index: -3;
+  background-color: #000000;
+  position: absolute;
+  top: 100%;
 }
 
-  /*----------------------GLITCH-----------------------*/
+/*----------------------GLITCH-----------------------*/
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  :root {
-    --background: #060608;
-    --color: #FAFAFA;
-  }
-  
-  html, body {
-    width: 100%;
-    height: 100%;
-    font-family: Arial;
-  }
-   
-  .container {
-    z-index: 100;
-    position: absolute;
-    top: 15%;
-    color: var(--color);
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .right {
-    text-align: right;
-    width: 100%;
-    color: red;
-  }
-  
-  .stack {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  
-  .stack span {
-    font-weight: bold;
-    grid-row-start: 1;
-    grid-column-start: 1;
-    font-size: 5rem;
-    --stack-height: calc(100% / var(--stacks) - 1px);
-    --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
-    --clip-top: calc(var(--stack-height) * var(--index));
-    --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
-    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
-    animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
-  }
-  
-  .stack span:nth-child(odd) { --glitch-translate: 8px; }
-  .stack span:nth-child(even) { --glitch-translate: -8px; }
-  
-  @keyframes stack {
-    0% {
-      opacity: 0;
-      transform: translateX(-50%);
-      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
-    };
-    60% {
-      opacity: 0.5;
-      transform: translateX(50%);
-    }
-    80% {
-      transform: none;
-      opacity: 1;
-      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
-    }
-    100% {
-      text-shadow: none;
-    }
-  }
-  
-  @keyframes glitch {
-    0% {
-      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
-      transform: translate(var(--glitch-translate));
-    }
-    2% {
-      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
-    }
-    4%, 100% {  text-shadow: none; transform: none; }
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+:root {
+  --background: #060608;
+  --color: #FAFAFA;
+}
 
-  /*----------------------SOLAR------------------------*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial;
+}
 
-  :root {
-    /** color system **/
-    --system-color-dark: oklch(0% 0 0);
-    --system-color-light: oklch(100% 0 0);
-    --system-color-logo: oklch(60.07% 0.241 28.73 / 80%);
-    --system-color-red-100: oklch(60.07% 0.241 28.73 / 25%);
-    --system-color-red-200: oklch(60.07% 0.241 28.73 / 50%);
-    --system-color-red-300: oklch(60.07% 0.241 28.73 / 100%);
-  
-    /** color themes **/
-    --system-color-theme-paths: var(--system-color-red-100)
-      var(--system-color-red-300);
-    --system-color-theme-planets: var(--system-color-red-200)
-      var(--system-color-red-200) var(--system-color-red-200)
-      var(--system-color-red-300);
-  
-    /** planet's radius **/
-    /* ♂ Mars real radius ≈ 3389.5km. */
-    --planet-radius-mars: 33.895px;
-    /* 🜨 Earth real radius ≈ 6371km. */
-    --planet-radius-earth: 63.71px;
-    /* ♀ Venus real radius ≈ 6051.8km. */
-    --planet-radius-venus: 60.518px;
-    /* ☿ Mercury real radius ≈ 2439.7km. */
-    --planet-radius-mercury: 24.397px;
-    /* ☉ Sun real radius ≈ 696340km (40 times smaller compared to the planet's dimensions values). */
-    --star-radius-sun: 174.085px;
-  
-    /** planet's trajectories **/
-    --planet-trajectory-mars: 446.085px;
-    --planet-trajectory-earth: 332.085px;
-    --planet-trajectory-venus: 257.085px;
-    --planet-trajectory-mercury: 203.085px;
-  
-    /** units **/
-    --system-margin-mars: 292px;
-    --system-margin-earth: 35px;
-    --system-margin-venus: 15px;
-    --system-margin-mercury: 38px;
-    --system-border-width: min(2px, .4vmin);
+.container {
+  z-index: 100;
+  position: absolute;
+  top: 15%;
+  color: var(--color);
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  text-align: right;
+  width: 100%;
+  color: red;
+}
+
+.stack {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.stack span {
+  font-weight: bold;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  font-size: 5rem;
+  --stack-height: calc(100% / var(--stacks) - 1px);
+  --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+  --clip-top: calc(var(--stack-height) * var(--index));
+  --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+  clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+  animation: stack 340ms cubic-bezier(.46, .29, 0, 1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+}
+
+.stack span:nth-child(odd) {
+  --glitch-translate: 8px;
+}
+
+.stack span:nth-child(even) {
+  --glitch-translate: -8px;
+}
+
+@keyframes stack {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
   }
+  60% {
+    opacity: 0.5;
+    transform: translateX(50%);
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    transform: translate(var(--glitch-translate));
+  }
+  2% {
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  }
+  4%,
+  100% {
+    text-shadow: none;
+    transform: none;
+  }
+}
+
+/*----------------------SOLAR------------------------*/
+
+:root {
+  /** color system **/
+  --system-color-dark: hsl(0, 0%, 0%);
+  --system-color-light: hsl(0, 0%, 100%);
+  --system-color-logo: hsla(0, 100%, 50%, 0.8);
+  --system-color-red-100: hsla(0, 100%, 50%, 0.25);
+  --system-color-red-200: hsla(0, 100%, 50%, 0.5);
+  --system-color-red-300: hsla(0, 100%, 50%, 1);
+
+  /** color themes **/
+  --system-color-theme-paths: var(--system-color-red-100)
+    var(--system-color-red-300);
+  --system-color-theme-planets: var(--system-color-red-200)
+    var(--system-color-red-200) var(--system-color-red-200)
+    var(--system-color-red-300);
+
+  /** planet's radius **/
+  /* ♂ Mars real radius ≈ 3389.5km. */
+  --planet-radius-mars: 33.895px;
+  /* 🜨 Earth real radius ≈ 6371km. */
+  --planet-radius-earth: 63.71px;
+  /* ♀ Venus real radius ≈ 6051.8km. */
+  --planet-radius-venus: 60.518px;
+  /* ☿ Mercury real radius ≈ 2439.7km. */
+  --planet-radius-mercury: 24.397px;
+  /* ☉ Sun real radius ≈ 696340km (40 times smaller compared to the planet's dimensions values). */
+  --star-radius-sun: 174.085px;
+
+  /** planet's trajectories **/
+  --planet-trajectory-mars: 446.085px;
+  --planet-trajectory-earth: 332.085px;
+  --planet-trajectory-venus: 257.085px;
+  --planet-trajectory-mercury: 203.085px;
+
+  /** units **/
+  --system-margin-mars: 292px;
+  --system-margin-earth: 35px;
+  --system-margin-venus: 15px;
+  --system-margin-mercury: 38px;
+  --system-border-width: min(2px, 0.4vmin);
+}
+
+/* Your solar system styles go here */
+
   
   *,
   *::after,
@@ -187,15 +203,15 @@
     font-size: 16px;
   }
   
-  body {
-    overflow-y: scroll;
+  body {  
+   
 background: linear-gradient(to top, #530000 20%, black 70%);
 overflow-x: hidden;
 display: flex;
 justify-content: center;
 align-items: center;
 height: 100vh;
-width: 100vw;
+width: 100%;
 background-color: var(--system-color-dark);
 
   
@@ -422,20 +438,6 @@ background-color: var(--system-color-dark);
     }
   }
 
-  /** 4K and 8K Ultra HD **/
-  /*
-  @media screen and (width > 1920px) {
-      & .solar-system__sun {
-          inline-size: calc(var(--star-radius-sun) * 2);
-      }
-  }
-  
-  @media screen and (width > 3840px) {
-      & .solar-system__sun {
-          inline-size: calc(var(--star-radius-sun) * 4);
-      }
-  }*/
-  
 
   .neon {
     z-index: 80;
