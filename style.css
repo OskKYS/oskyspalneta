@@ -472,6 +472,30 @@ background-color: var(--system-color-dark);
       font-size: 0.85em;
     }
   }
+  @media only screen and (max-width: 1900px) {
+    .neon {
+      top: 940px;
+      font-size: 1.5em;
+    }
+  }
+  @media only screen and (max-width: 1500px) {
+    .neon {
+      top: 940px;
+      font-size: 1.3em;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .neon {
+      top: 940px;
+      font-size: 1em;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .neon {
+      top: 940px;
+      font-size: 0.9em;
+    }
+  }
   /*---------------------------TEXT-GLITCH2--------------------------------*/
 
 
@@ -1631,12 +1655,57 @@ ul li a:hover:nth-child(4) {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
   ul li a {
     font-size: 20px; /* Změna velikosti písma pro menší obrazovky */
     width: 60px; /* Změna šířky položek pro menší obrazovky */
     height: 60px; /* Změna výšky položek pro menší obrazovky */
     line-height: 60px; /* Změna výšky řádku pro menší obrazovky */
+    margin: 0 10px; /* Snížení mezery mezi položkami na menších obrazovkách */
+  }
+}
+
+@media only screen and (max-width: 1900px) {
+  ul {
+        top: 150%;
+        left: 72%;
+        transform: translate(-50%, -50%);
+  }
+
+  ul li a {
+    
+    width: 100px; /* Změna šířky položek pro menší obrazovky */
+    height: 100px; /* Změna výšky položek pro menší obrazovky */
+    line-height: 100px; /* Změna výšky řádku pro menší obrazovky */
+    margin: 0 10px; /* Snížení mezery mezi položkami na menších obrazovkách */
+  }
+}
+@media only screen and (max-width: 1700px) {
+  ul {
+        top: 150%;
+        left: 74%;
+        transform: translate(-50%, -50%);
+  }
+
+  ul li a {
+    
+    width: 100px; /* Změna šířky položek pro menší obrazovky */
+    height: 100px; /* Změna výšky položek pro menší obrazovky */
+    line-height: 100px; /* Změna výšky řádku pro menší obrazovky */
+    margin: 0 10px; /* Snížení mezery mezi položkami na menších obrazovkách */
+  }
+}
+@media only screen and (max-width: 1100px) {
+  ul {
+        top: 150%;
+        left: 77%;
+        transform: translate(-50%, -50%);
+  }
+
+  ul li a {
+    
+    width: 70px; /* Změna šířky položek pro menší obrazovky */
+    height: 70px; /* Změna výšky položek pro menší obrazovky */
+    line-height: 70px; /* Změna výšky řádku pro menší obrazovky */
     margin: 0 10px; /* Snížení mezery mezi položkami na menších obrazovkách */
   }
 }
@@ -1665,5 +1734,107 @@ ul li a:hover:nth-child(4) {
     top: 176.5%;
     left: 68.5%; /* Nová pozice pro menší obrazovky */
     transform: scale(0.5);
+  }
+}
+@media only screen and (max-width: 1900px) {
+  .instag {
+    top: 146.7%;
+    left: 59.5%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .github {
+    top: 146.7%;
+    left: 66.7%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .discord {
+    top: 146.7%;
+    left: 73.7%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .tiktok {
+    top: 146.7%;
+    left: 80.8%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+}
+@media only screen and (max-width: 1700px) {
+  .instag {
+    top: 146.7%;
+    left: 59.4%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .github {
+    top: 146.7%;
+    left: 67.7%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .discord {
+    top: 146.7%;
+    left: 76%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .tiktok {
+    top: 146.7%;
+    left: 84.3%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .instag {
+    top: 146.7%;
+    left: 57.7%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .github {
+    top: 146.7%;
+    left: 67%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .discord {
+    top: 146.7%;
+    left: 76.2%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .tiktok {
+    top: 146.7%;
+    left: 85.7%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .instag {
+    top: 146.7%;
+    left: 61.1%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.6);
+  }
+
+  .github {
+    top: 146.7%;
+    left: 69.7%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.6);
+  }
+
+  .discord {
+    top: 146.7%;
+    left: 78.4%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.6);
+  }
+
+  .tiktok {
+    top: 146.7%;
+    left: 86.8%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.6);
   }
 }
