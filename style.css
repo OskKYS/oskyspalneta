@@ -38,7 +38,7 @@
   border-radius: 5px;
   background-color: #530000;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
   .line {
     top: 923px; /* Posunout čáru na střed obrazovky */
     transform: translateY(-50%);
@@ -466,7 +466,7 @@ background-color: var(--system-color-dark);
       0 0 100px #ff0000,
  
   }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 800px) {
     .neon {
       top: 940px;
       font-size: 0.85em;
@@ -1485,7 +1485,7 @@ background-color: var(--system-color-dark);
     text-align: center;
   }
   
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 800px) {
       #button {
         transform:translate(-50%,-50%);
       }
@@ -1648,7 +1648,7 @@ ul li a:hover:nth-child(4) {
   top: 147%;
   left: 83%;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
 
   ul {
     top: 180%;
@@ -1711,7 +1711,7 @@ ul li a:hover:nth-child(4) {
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
   .instag {
     top: 176.5%;
     left: 19%; /* Nová pozice pro menší obrazovky */
@@ -1836,5 +1836,10 @@ ul li a:hover:nth-child(4) {
     top: 146.7%;
     left: 86.8%; /* Nová pozice pro menší obrazovky */
     transform: scale(0.6);
+  }
+}
+@media only screen and (max-width: 1900px) {
+  .line {
+    top: 95%;
   }
 }
