@@ -1,5 +1,5 @@
 function scrollDown() {
-  // Smooth scroll down to the bottom of the page
+  
   window.scrollTo({
       top: document.body.scrollHeight,
       behavior: 'smooth'
@@ -129,7 +129,7 @@ Setup
 function setup() {
     let canvasWidth = 2 * windowWidth;
     let canvasHeight = windowHeight;
-    let canvasTop = 890; // Umístění plátna na spodní část okna
+    let canvasTop = 890; 
     
     createCanvas(canvasWidth, canvasHeight).position(0, canvasTop).style;
     
@@ -154,5 +154,5 @@ function draw() {
     p.render();
   }
 }
-/*---------------------TEXTOS--------------------*/
+
 
