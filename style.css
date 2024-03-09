@@ -27,6 +27,7 @@
   left: -2px;
 }
 
+
 .line {
   z-index: 90;
   position: absolute;
@@ -36,6 +37,13 @@
   height: 13px;
   border-radius: 5px;
   background-color: #530000;
+}
+@media only screen and (max-width: 600px) {
+  .line {
+    top: 923px; /* Posunout čáru na střed obrazovky */
+    transform: translateY(-50%);
+    height: 8px; /* Zmenšit výšku čáry */
+  }
 }
 
 .space {
@@ -457,6 +465,12 @@ background-color: var(--system-color-dark);
       0 0 40px #ff0000,
       0 0 100px #ff0000,
  
+  }
+  @media only screen and (max-width: 600px) {
+    .neon {
+      top: 940px;
+      font-size: 0.85em;
+    }
   }
   /*---------------------------TEXT-GLITCH2--------------------------------*/
 
@@ -1447,6 +1461,28 @@ background-color: var(--system-color-dark);
     text-align: center;
   }
   
+    @media screen and (max-width: 600px) {
+      #button {
+        transform:translate(-50%,-50%);
+      }
+      .hero {
+        opacity: 0;
+      }
+      section2 {
+        top: 166%;
+        left: 23%;
+      }
+  
+    .hero2 {
+      font-size: 1.5rem;
+      letter-spacing: 10px;
+    }
+  
+    .demo {
+      height: 80px;
+    }
+  
+    }
 /*---------------------------SOCIALS------------------------*/
 ul {
   position:absolute;
@@ -1587,4 +1623,47 @@ ul li a:hover:nth-child(4) {
   position: absolute;
   top: 147%;
   left: 83%;
+}
+@media only screen and (max-width: 600px) {
+
+  ul {
+    top: 180%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  ul li a {
+    font-size: 20px; /* Změna velikosti písma pro menší obrazovky */
+    width: 60px; /* Změna šířky položek pro menší obrazovky */
+    height: 60px; /* Změna výšky položek pro menší obrazovky */
+    line-height: 60px; /* Změna výšky řádku pro menší obrazovky */
+    margin: 0 10px; /* Snížení mezery mezi položkami na menších obrazovkách */
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .instag {
+    top: 176.5%;
+    left: 19%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.5);
+  }
+
+  .github {
+    top: 176.5%;
+    left: 35.5%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.5);
+  }
+
+  .discord {
+    top: 176.5%;
+    left: 52%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.5);
+  }
+
+  .tiktok {
+    top: 176.5%;
+    left: 68.5%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.5);
+  }
 }
