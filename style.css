@@ -1790,6 +1790,7 @@ ul li a:hover:nth-child(4) {
 
 @media only screen and (max-width: 768px) {
   .obdelnik {
+    opacity: 0;
   top: 62%;
   }
   .instag {
@@ -1829,7 +1830,8 @@ ul li a:hover:nth-child(4) {
   }
 
   #button {
-    top: 35%;
+    opacity: 0;
+    top: 08%;
     left: 85%; /* Střed pro menší obrazovky */
     transform: translate(-50%, -50%);
   }
@@ -1837,10 +1839,7 @@ ul li a:hover:nth-child(4) {
   .hero {
     opacity: 0;
   }
-  .hero2 {
-    font-size: 3rem;
-    letter-spacing: 10px;
-  }
+  
 
   .demo {
     height: 80px;
