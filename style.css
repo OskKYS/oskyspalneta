@@ -17,34 +17,18 @@
 
 .obdelnik {
   z-index: 60;
-  width: 1890px;
-  height: 180px;
+  width: 1990px;
+  height: 186px;
   background-color: transparent;
   filter: blur(3px);
   border: 5px solid #ff0000;
   position: relative;
-  top: 61.2%;
+  top: 60%;
   left: -2px;
 }
 
 
-.line {
-  z-index: 90;
-  position: absolute;
-  top: 930px;
-  display: block;
-  width: 100%;
-  height: 13px;
-  border-radius: 5px;
-  background-color: #530000;
-}
-@media only screen and (max-width: 800px) {
-  .line {
-    top: 923px; /* Posunout čáru na střed obrazovky */
-    transform: translateY(-50%);
-    height: 8px; /* Zmenšit výšku čáry */
-  }
-}
+
 
 .space {
   width: 100%;
@@ -454,7 +438,7 @@ background-color: var(--system-color-dark);
     .neon {
       z-index: 80;
       position: absolute;
-      top: 970px;
+      top: 960px;
       left: 1%;
       font-family: monospace;
       font-size: 1.5rem;
@@ -466,36 +450,7 @@ background-color: var(--system-color-dark);
       0 0 100px #ff0000,
  
   }
-  @media only screen and (max-width: 800px) {
-    .neon {
-      top: 940px;
-      font-size: 0.85em;
-    }
-  }
-  @media only screen and (max-width: 1900px) {
-    .neon {
-      top: 980px;
-      font-size: 1.5em;
-    }
-  }
-  @media only screen and (max-width: 1500px) {
-    .neon {
-      top: 980px;
-      font-size: 1em;
-    }
-  }
-  @media only screen and (max-width: 1200px) {
-    .neon {
-      top: 980px;
-      font-size: 1em;
-    }
-  }
-  @media only screen and (max-width: 800px) {
-    .neon {
-      top: 990px;
-      font-size: 0.85em;
-    }
-  }
+
   /*---------------------------TEXT-GLITCH2--------------------------------*/
 
 
@@ -1485,50 +1440,7 @@ background-color: var(--system-color-dark);
     text-align: center;
   }
   
-    @media screen and (max-width: 800px) {
-      #button {
-        transform:translate(-50%,-50%);
-      }
-      .hero {
-        opacity: 0;
-      }
-      section2 {
-        top: 166%;
-        left: 23%;
-      }
-  
-    .hero2 {
-      font-size: 1.5rem;
-      letter-spacing: 10px;
-    }
-  
-    .demo {
-      height: 80px;
-    }
-  
-    }
-    @media screen and (max-width: 800px) {
-      #button {
-        transform:translate(-50%,-50%);
-      }
-      .hero {
-        opacity: 0;
-      }
-      section2 {
-        top: 166%;
-        left: 23%;
-      }
-  
-    .hero2 {
-      font-size: 1rem;
-      letter-spacing: 10px;
-    }
-  
-    .demo {
-      height: 80px;
-    }
-  
-    }
+
 /*---------------------------SOCIALS------------------------*/
 ul {
   position:absolute;
@@ -1874,50 +1786,35 @@ ul li a:hover:nth-child(4) {
     transform: scale(0.6);
   }
 }
-@media only screen and (max-width: 1900px) {
-  .line {
-    top: 95%;
-  }
-}
-/* Úpravy pro zařízení s maximální šířkou 768px */
+
+
 @media only screen and (max-width: 768px) {
-  body {
-    height: 50%;
-  }
-  .space {
-    height: 50%;
-  }
   .obdelnik {
-  top: 172%;
+  top: 62%;
   }
   .instag {
     top: 150%;
     left: 16%; /* Střed pro menší obrazovky */
     transform: translate(-50%, -50%) scale(0.6);
   }
-
   .github {
     top: 150%;
     left: 39%; /* Střed pro menší obrazovky */
     transform: translate(-50%, -50%) scale(0.6);
   }
-
   .discord {
     top: 150%;
     left: 61%; /* Střed pro menší obrazovky */
     transform: translate(-50%, -50%) scale(0.6);
   }
-
   .tiktok {
     top: 150%;
     left: 83.5%; /* Střed pro menší obrazovky */
     transform: translate(-50%, -50%) scale(0.6);
   }
-
-  .line {
-    top: 95%;
-  }
-
+}
+ 
+@media only screen and (max-width: 768px) {
   ul {
     top: 150%;
     left: 50%; /* Střed pro menší obrazovky */
@@ -1940,40 +1837,82 @@ ul li a:hover:nth-child(4) {
   .hero {
     opacity: 0;
   }
-
-  section2 {
-    top: 126%;
-    left: 50%; /* Střed pro menší obrazovky */
-    transform: translateX(-50%);
-  }
-
   .hero2 {
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 10px;
   }
 
   .demo {
     height: 80px;
   }
-
-  .neon {
-    top: 101.5%; /* Odsazení odspodu */
-    font-size: 0.8em;
-  }
+ 
 }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-height: 900px) {
 
   .obdelnik {
   top: 62%;
   }
 
-
-  .line {
-    top: 95%;
-  }
-
   .neon {
-    top: 10.5%; /* Odsazení odspodu */
+    top: 100.5%; /* Odsazení odspodu */
     font-size: 1.4em;
   }
 }
+
+
+
+@media only screen and (max-width: 1500px) {
+  .neon {
+    top: 980px;
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .neon {
+    top: 980px;
+    font-size: 1em;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  #button {
+    transform:translate(-50%,-50%);
+  }
+  .hero {
+    opacity: 0;
+  }
+  section2 {
+    top: 166%;
+    left: 23%;
+  }
+
+.hero2 {
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}
+
+.demo {
+  height: 80px;
+}
+.neon {
+  top: 990px;
+  font-size: 0.85em;
+}
+
+}
+
