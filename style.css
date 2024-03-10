@@ -486,14 +486,14 @@ background-color: var(--system-color-dark);
   }
   @media only screen and (max-width: 1200px) {
     .neon {
-      top: 940px;
+      top: 960px;
       font-size: 1em;
     }
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     .neon {
-      top: 940px;
-      font-size: 0.9em;
+      top: 960px;
+      font-size: 0.85em;
     }
   }
   /*---------------------------TEXT-GLITCH2--------------------------------*/
@@ -1507,6 +1507,28 @@ background-color: var(--system-color-dark);
     }
   
     }
+    @media screen and (max-width: 800px) {
+      #button {
+        transform:translate(-50%,-50%);
+      }
+      .hero {
+        opacity: 0;
+      }
+      section2 {
+        top: 166%;
+        left: 23%;
+      }
+  
+    .hero2 {
+      font-size: 1rem;
+      letter-spacing: 10px;
+    }
+  
+    .demo {
+      height: 80px;
+    }
+  
+    }
 /*---------------------------SOCIALS------------------------*/
 ul {
   position:absolute;
@@ -1841,5 +1863,78 @@ ul li a:hover:nth-child(4) {
 @media only screen and (max-width: 1900px) {
   .line {
     top: 95%;
+  }
+}
+/* Úpravy pro zařízení s maximální šířkou 768px */
+@media only screen and (max-width: 768px) {
+  .instag {
+    top: 50%;
+    left: 50%; /* Střed pro menší obrazovky */
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  .github {
+    top: 50%;
+    left: 50%; /* Střed pro menší obrazovky */
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  .discord {
+    top: 50%;
+    left: 50%; /* Střed pro menší obrazovky */
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  .tiktok {
+    top: 50%;
+    left: 50%; /* Střed pro menší obrazovky */
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  .line {
+    top: 95%;
+  }
+
+  ul {
+    top: 150%;
+    left: 50%; /* Střed pro menší obrazovky */
+    transform: translate(-50%, -50%);
+  }
+
+  ul li a {
+    width: 70px; /* Změna šířky položek pro menší obrazovky */
+    height: 70px; /* Změna výšky položek pro menší obrazovky */
+    line-height: 70px; /* Změna výšky řádku pro menší obrazovky */
+    margin: 0 10px; /* Snížení mezery mezi položkami na menších obrazovkách */
+  }
+
+  #button {
+    top: 50%;
+    left: 50%; /* Střed pro menší obrazovky */
+    transform: translate(-50%, -50%);
+  }
+
+  .hero {
+    opacity: 0;
+  }
+
+  section2 {
+    top: 166%;
+    left: 50%; /* Střed pro menší obrazovky */
+    transform: translateX(-50%);
+  }
+
+  .hero2 {
+    font-size: 1rem;
+    letter-spacing: 10px;
+  }
+
+  .demo {
+    height: 80px;
+  }
+
+  .neon {
+    top: 96%; /* Odsazení odspodu */
+    font-size: 0.85em;
   }
 }
