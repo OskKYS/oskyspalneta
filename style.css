@@ -474,25 +474,25 @@ background-color: var(--system-color-dark);
   }
   @media only screen and (max-width: 1900px) {
     .neon {
-      top: 940px;
+      top: 980px;
       font-size: 1.5em;
     }
   }
   @media only screen and (max-width: 1500px) {
     .neon {
-      top: 940px;
-      font-size: 1.3em;
+      top: 980px;
+      font-size: 1em;
     }
   }
   @media only screen and (max-width: 1200px) {
     .neon {
-      top: 960px;
+      top: 980px;
       font-size: 1em;
     }
   }
   @media only screen and (max-width: 800px) {
     .neon {
-      top: 960px;
+      top: 990px;
       font-size: 0.85em;
     }
   }
@@ -1555,10 +1555,14 @@ ul li a {
   color:#ff0000;
   margin: 0 30px;
   transition:.5s;
+  
+  
 }
 ul li a span {
   position:absolute;
   transition: transform .5s;
+  
+  
 }
 ul li a span:nth-child(1),
 ul li a span:nth-child(3){
@@ -1567,14 +1571,17 @@ ul li a span:nth-child(3){
   background:#ff0000;
 }
 ul li a span:nth-child(1) {
+  
   top:0;
   left:0;
   transform-origin: right;
 }
 ul li a:hover span:nth-child(1) {
+  
   transform: scaleX(0);
   transform-origin: left;
   transition:transform .5s;
+ 
 }
 
 ul li a span:nth-child(3) {
@@ -1606,12 +1613,14 @@ ul li a:hover span:nth-child(2) {
   transition:transform .5s;
 }
 ul li a span:nth-child(4) {
+  
   top:0;
   right:0;
   transform:scale(0);
   transform-origin: top;
 }
 ul li a:hover span:nth-child(4) {
+  
   transform: scale(1);
   transform-origin: bottom;
   transition:transform .5s;
@@ -1642,14 +1651,19 @@ ul li a:hover span:nth-child(4) {
   background: #ff0000;
 }
 ul li a .twitter {
+  display: none;
   color: #1da1f2;
 }
 ul li a:hover:nth-child(3) {
+  display: none;
   color: #c32aa3;
 }
 ul li a:hover:nth-child(4) {
+  display: none;
   color: #dd4b39;
 }
+
+
 .instag {
   position: absolute;
   top: 147%;
@@ -1867,27 +1881,36 @@ ul li a:hover:nth-child(4) {
 }
 /* Úpravy pro zařízení s maximální šířkou 768px */
 @media only screen and (max-width: 768px) {
+  body {
+    height: 50%;
+  }
+  .space {
+    height: 50%;
+  }
+  .obdelnik {
+  top: 172%;
+  }
   .instag {
-    top: 50%;
-    left: 50%; /* Střed pro menší obrazovky */
+    top: 150%;
+    left: 16%; /* Střed pro menší obrazovky */
     transform: translate(-50%, -50%) scale(0.6);
   }
 
   .github {
-    top: 50%;
-    left: 50%; /* Střed pro menší obrazovky */
+    top: 150%;
+    left: 39%; /* Střed pro menší obrazovky */
     transform: translate(-50%, -50%) scale(0.6);
   }
 
   .discord {
-    top: 50%;
-    left: 50%; /* Střed pro menší obrazovky */
+    top: 150%;
+    left: 61%; /* Střed pro menší obrazovky */
     transform: translate(-50%, -50%) scale(0.6);
   }
 
   .tiktok {
-    top: 50%;
-    left: 50%; /* Střed pro menší obrazovky */
+    top: 150%;
+    left: 83.5%; /* Střed pro menší obrazovky */
     transform: translate(-50%, -50%) scale(0.6);
   }
 
@@ -1909,8 +1932,8 @@ ul li a:hover:nth-child(4) {
   }
 
   #button {
-    top: 50%;
-    left: 50%; /* Střed pro menší obrazovky */
+    top: 35%;
+    left: 85%; /* Střed pro menší obrazovky */
     transform: translate(-50%, -50%);
   }
 
@@ -1919,13 +1942,13 @@ ul li a:hover:nth-child(4) {
   }
 
   section2 {
-    top: 166%;
+    top: 126%;
     left: 50%; /* Střed pro menší obrazovky */
     transform: translateX(-50%);
   }
 
   .hero2 {
-    font-size: 1rem;
+    font-size: 2rem;
     letter-spacing: 10px;
   }
 
@@ -1934,7 +1957,23 @@ ul li a:hover:nth-child(4) {
   }
 
   .neon {
-    top: 96%; /* Odsazení odspodu */
-    font-size: 0.85em;
+    top: 101.5%; /* Odsazení odspodu */
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-height: 900px) {
+
+  .obdelnik {
+  top: 62%;
+  }
+
+
+  .line {
+    top: 95%;
+  }
+
+  .neon {
+    top: 10.5%; /* Odsazení odspodu */
+    font-size: 1.4em;
   }
 }
