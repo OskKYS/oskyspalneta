@@ -30,10 +30,7 @@
 
 
 
-.space {
-  width: 100%;
-  height: 1000px;
-}
+
 
 .background {
   z-index: -3;
@@ -438,7 +435,7 @@ background-color: var(--system-color-dark);
     .neon {
       z-index: 80;
       position: absolute;
-      top: 960px;
+      top: 963px;
       left: 1%;
       font-family: monospace;
       font-size: 1.5rem;
@@ -1596,6 +1593,13 @@ ul li a:hover:nth-child(4) {
   top: 147%;
   left: 83%;
 }
+
+
+
+
+
+
+/*---------------------MEDIA----------------*/
 @media only screen and (max-width: 800px) {
 
   ul {
@@ -1789,6 +1793,7 @@ ul li a:hover:nth-child(4) {
 
 
 @media only screen and (max-width: 768px) {
+
   .obdelnik {
     opacity: 0;
   top: 62%;
@@ -1846,18 +1851,6 @@ ul li a:hover:nth-child(4) {
   }
  
 }
-  
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media only screen and (max-height: 900px) {
@@ -1914,4 +1907,258 @@ ul li a:hover:nth-child(4) {
 }
 
 }
+
+/* Malé obrazovky, například starší telefony */
+@media only screen and (max-width: 480px) {
+  .obdelnik {
+  opacity: 0;
+  top: 62%;
+  }
+  .instag {
+    top: 150%;
+    left: 16%; /* Střed pro menší obrazovky */
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  .github {
+    top: 150%;
+    left: 39%; /* Střed pro menší obrazovky */
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  .discord {
+    top: 150%;
+    left: 61%; /* Střed pro menší obrazovky */
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  .tiktok {
+    top: 150%;
+    left: 83.5%; /* Střed pro menší obrazovky */
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  ul {
+    top: 150%;
+    left: 50%; /* Střed pro menší obrazovky */
+    transform: translate(-50%, -50%);
+  }
+
+  ul li a {
+    width: 70px; /* Změna šířky položek pro menší obrazovky */
+    height: 70px; /* Změna výšky položek pro menší obrazovky */
+    line-height: 70px; /* Změna výšky řádku pro menší obrazovky */
+    margin: 0 10px; /* Snížení mezery mezi položkami na menších obrazovkách */
+  }
+
+  #button {
+    opacity: 0;
+    top: 08%;
+    left: 85%; /* Střed pro menší obrazovky */
+    transform: translate(-50%, -50%);
+  }
+
+  .hero {
+    opacity: 0;
+  }
+  
+
+  .demo {
+    height: 80px;
+  }
+}
+
+/* Velmi velké obrazovky, například ultra-wide monitory */
+@media only screen and (min-width: 2560px) {
+  .obdelnik {
+    width: 1000%;
+    top: 33%;
+    }
+    .instag {
+      top: 120%;
+      left: 61.75%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .github {
+      top: 120%;
+      left: 67.3%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .discord {
+      top: 120%;
+      left: 72.75%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .tiktok {
+      top: 120%;
+      left: 78.3%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%) scale(1);
+    }
+  
+    ul {
+      top: 120%;
+      left: 70%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%);
+
+    }
+  
+    ul li a {
+      width: 120px; /* Změna šířky položek pro menší obrazovky */
+      height: 120px; /* Změna výšky položek pro menší obrazovky */
+      line-height: 70px; /* Změna výšky řádku pro menší obrazovky */
+      margin: 0 10px; /* Snížení mezery mezi položkami na menších obrazovkách */
+    }
+  
+  .hero {
+    font-size: 4rem;
+  }
+  .hero2 {
+    font-size: 4rem;
+  }
+  
+    section1 {
+      top: 91.5%;
+    }
+    section2 {
+      top: 100%;
+    }
+    
+  
+    .demo {
+      height: 80px;
+    }
+    .neon {
+      top: 76.5%;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 2160px) {
+  .obdelnik {
+    width: 1000%;
+    top: 39%;
+    }
+    .instag {
+      top: 120%;
+      left: 61.75%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .github {
+      top: 120%;
+      left: 67.3%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .discord {
+      top: 120%;
+      left: 72.75%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .tiktok {
+      top: 120%;
+      left: 78.3%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%) scale(1);
+    }
+  
+    ul {
+      top: 120%;
+      left: 70%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%);
+
+    }
+  
+    ul li a {
+      width: 120px; /* Změna šířky položek pro menší obrazovky */
+      height: 120px; /* Změna výšky položek pro menší obrazovky */
+      line-height: 70px; /* Změna výšky řádku pro menší obrazovky */
+      margin: 0 10px; /* Snížení mezery mezi položkami na menších obrazovkách */
+    }
+  
+  .hero {
+    font-size: 4rem;
+  }
+  .hero2 {
+    font-size: 4rem;
+  }
+  
+    section1 {
+      top: 91.5%;
+    }
+    section2 {
+      top: 100%;
+    }
+    
+  
+    .demo {
+      height: 80px;
+    }
+    .neon {
+      top: 82.5%;
+    }
+}
+
+@media only screen and (min-width: 2060px) {
+  .obdelnik {
+    width: 1000%;
+    top: 49%;
+    }
+    .instag {
+      top: 130%;
+      left: 62.75%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .github {
+      top: 130%;
+      left: 69.3%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .discord {
+      top: 130%;
+      left: 75.75%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .tiktok {
+      top: 130%;
+      left: 82.5%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%) scale(1);
+    }
+  
+    ul {
+      top: 130%;
+      left: 72.5%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%);
+
+    }
+  
+    ul li a {
+      width: 120px; /* Změna šířky položek pro menší obrazovky */
+      height: 120px; /* Změna výšky položek pro menší obrazovky */
+      line-height: 70px; /* Změna výšky řádku pro menší obrazovky */
+      margin: 0 10px; /* Snížení mezery mezi položkami na menších obrazovkách */
+    }
+  
+  .hero {
+    font-size: 4rem;
+  }
+  .hero2 {
+    font-size: 4rem;
+  }
+  
+    section1 {
+      top: 101.5%;
+    }
+    section2 {
+      top: 110%;
+    }
+    
+  
+    .demo {
+      height: 80px;
+    }
+    .neon {
+      top: 92.5%;
+    }
+}
+
+
+
 
