@@ -2233,5 +2233,7 @@ ul li a:hover:nth-child(4) {
     }
 }
 @media only screen and (width: 1920px) and (height: 1080px) {
-  
+  .neon {
+    top: 969px;
+  }
 }
