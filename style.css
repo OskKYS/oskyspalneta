@@ -1691,38 +1691,88 @@ ul li a:hover:nth-child(4) {
 @media only screen and (max-width: 1900px) {
   .instag {
     top: 146.7%;
-    left: 59.5%; /* Nová pozice pro menší obrazovky */
+    left: 60.8%; /* Nová pozice pro menší obrazovky */
     transform: scale(0.9);
   }
 
   .github {
     top: 146.7%;
-    left: 66.7%; /* Nová pozice pro menší obrazovky */
+    left: 67.2%; /* Nová pozice pro menší obrazovky */
     transform: scale(0.9);
   }
 
   .discord {
     top: 146.7%;
-    left: 73.7%; /* Nová pozice pro menší obrazovky */
+    left: 73.5%; /* Nová pozice pro menší obrazovky */
     transform: scale(0.9);
   }
 
   .tiktok {
     top: 146.7%;
-    left: 80.8%; /* Nová pozice pro menší obrazovky */
+    left: 80%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+}
+@media only screen and (max-width: 1800px) {
+  .instag {
+    top: 146.7%;
+    left: 59.8%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .github {
+    top: 146.7%;
+    left: 66.8%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .discord {
+    top: 146.7%;
+    left: 73.75%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .tiktok {
+    top: 146.7%;
+    left: 80.7%; /* Nová pozice pro menší obrazovky */
     transform: scale(0.9);
   }
 }
 @media only screen and (max-width: 1700px) {
   .instag {
     top: 146.7%;
-    left: 59.4%; /* Nová pozice pro menší obrazovky */
+    left: 60.6%; /* Nová pozice pro menší obrazovky */
     transform: scale(0.9);
   }
 
   .github {
     top: 146.7%;
-    left: 67.7%; /* Nová pozice pro menší obrazovky */
+    left: 68.2%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .discord {
+    top: 146.7%;
+    left: 75.8%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .tiktok {
+    top: 146.7%;
+    left: 83.5%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .instag {
+    top: 146.7%;
+    left: 60.15%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .github {
+    top: 146.7%;
+    left: 68%; /* Nová pozice pro menší obrazovky */
     transform: scale(0.9);
   }
 
@@ -1734,36 +1784,60 @@ ul li a:hover:nth-child(4) {
 
   .tiktok {
     top: 146.7%;
-    left: 84.3%; /* Nová pozice pro menší obrazovky */
+    left: 83.7%; /* Nová pozice pro menší obrazovky */
     transform: scale(0.9);
   }
 }
 @media only screen and (max-width: 1500px) {
   .instag {
     top: 146.7%;
-    left: 57.7%; /* Nová pozice pro menší obrazovky */
+    left: 59.2%; /* Nová pozice pro menší obrazovky */
     transform: scale(0.9);
   }
 
   .github {
     top: 146.7%;
-    left: 67%; /* Nová pozice pro menší obrazovky */
+    left: 67.5%; /* Nová pozice pro menší obrazovky */
     transform: scale(0.9);
   }
 
   .discord {
     top: 146.7%;
-    left: 76.2%; /* Nová pozice pro menší obrazovky */
+    left: 76.25%; /* Nová pozice pro menší obrazovky */
     transform: scale(0.9);
   }
 
   .tiktok {
     top: 146.7%;
-    left: 85.7%; /* Nová pozice pro menší obrazovky */
+    left: 84.7%; /* Nová pozice pro menší obrazovky */
     transform: scale(0.9);
   }
 }
+@media only screen and (max-width: 1400px) {
+  .instag {
+    top: 146.7%;
+    left: 60.8%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
 
+  .github {
+    top: 146.7%;
+    left: 67.2%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .discord {
+    top: 146.7%;
+    left: 73.5%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+
+  .tiktok {
+    top: 146.7%;
+    left: 80%; /* Nová pozice pro menší obrazovky */
+    transform: scale(0.9);
+  }
+}
 
 @media only screen and (max-width: 1100px) {
   .instag {
@@ -2158,7 +2232,65 @@ ul li a:hover:nth-child(4) {
       top: 92.5%;
     }
 }
+@media only screen and (width: 1920px) and (height: 1080px) {
+  .obdelnik {
+    width: 1000%;
+    top: 49%;
+    }
+    .instag {
+      top: 130%;
+      left: 62.75%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .github {
+      top: 130%;
+      left: 69.3%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .discord {
+      top: 130%;
+      left: 75.75%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .tiktok {
+      top: 130%;
+      left: 82.5%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%) scale(1);
+    }
+  
+    ul {
+      top: 130%;
+      left: 72.5%; /* Střed pro menší obrazovky */
+      transform: translate(-50%, -50%);
 
-
-
-
+    }
+  
+    ul li a {
+      width: 120px; /* Změna šířky položek pro menší obrazovky */
+      height: 120px; /* Změna výšky položek pro menší obrazovky */
+      line-height: 70px; /* Změna výšky řádku pro menší obrazovky */
+      margin: 0 10px; /* Snížení mezery mezi položkami na menších obrazovkách */
+    }
+  
+  .hero {
+    font-size: 4rem;
+  }
+  .hero2 {
+    font-size: 4rem;
+  }
+  
+    section1 {
+      top: 101.5%;
+    }
+    section2 {
+      top: 110%;
+    }
+    
+  
+    .demo {
+      height: 80px;
+    }
+    .neon {
+      top: 92.5%;
+    }
+}
