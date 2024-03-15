@@ -138,9 +138,6 @@ function setup() {
     }
     strokeWeight(opt.strokeWeight);
 }
-
-
-
 /*--------------------
 Draw
 --------------------*/
@@ -158,4 +155,3 @@ function draw() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight)
 }
-

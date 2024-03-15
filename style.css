@@ -14,6 +14,24 @@
   border-radius: 20px;
 }
 
+img {
+  position: absolute;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+img:hover {
+  filter: grayscale(0%)
+}
+.obrazos {
+  z-index: 50;
+  height: 27%;
+  border-radius: 20px;
+  position: absolute;
+  top: 140%;
+  left: 16%;
+  
+}
 
 .obdelnik {
   z-index: 60;
@@ -26,11 +44,6 @@
   top: 60%;
   left: -2px;
 }
-
-
-
-
-
 
 .background {
   z-index: -3;
@@ -1664,6 +1677,9 @@ ul li a:hover:nth-child(4) {
 
 
 @media only screen and (max-width: 800px) {
+  .obrazos {
+    opacity: 0;
+  }
   .instag {
     top: 176.5%;
     left: 19%; /* Nová pozice pro menší obrazovky */
@@ -1689,6 +1705,10 @@ ul li a:hover:nth-child(4) {
   }
 }
 @media only screen and (max-width: 1900px) {
+  .obrazos {
+    left: 17%;
+    top: 140%;
+  }
   .instag {
     top: 146.7%;
     left: 60.8%; /* Nová pozice pro menší obrazovky */
@@ -1714,6 +1734,10 @@ ul li a:hover:nth-child(4) {
   }
 }
 @media only screen and (max-width: 1800px) {
+  .obrazos {
+    left: 19%;
+    top: 143%;
+  }
   .instag {
     top: 146.7%;
     left: 59.8%; /* Nová pozice pro menší obrazovky */
@@ -1739,6 +1763,10 @@ ul li a:hover:nth-child(4) {
   }
 }
 @media only screen and (max-width: 1700px) {
+  .obrazos {
+    left: 17%;
+    top: 140%;
+  }
   .instag {
     top: 146.7%;
     left: 60.6%; /* Nová pozice pro menší obrazovky */
@@ -2041,6 +2069,10 @@ ul li a:hover:nth-child(4) {
 
 /* Velmi velké obrazovky, například ultra-wide monitory */
 @media only screen and (min-width: 2560px) {
+  .obrazos {
+    left: 13%;
+    top: 120%;
+  }
   .obdelnik {
     width: 1000%;
     top: 33%;
@@ -2108,6 +2140,10 @@ ul li a:hover:nth-child(4) {
 
 
 @media only screen and (min-width: 2160px) {
+  .obrazos {
+    left: 14.5%;
+    top: 120%;
+  }
   .obdelnik {
     width: 1000%;
     top: 39%;
@@ -2171,6 +2207,10 @@ ul li a:hover:nth-child(4) {
 }
 
 @media only screen and (min-width: 2060px) {
+  .obrazos {
+    left: 16%;
+    top: 125%;
+  }
   .obdelnik {
     width: 1000%;
     top: 49%;
