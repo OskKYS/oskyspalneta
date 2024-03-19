@@ -1704,6 +1704,11 @@ ul li a:hover:nth-child(4) {
     transform: scale(0.5);
   }
 }
+@media only screen and (max-width: 1760px) {
+  .neon {
+    top: 100px;
+  }
+}
 @media only screen and (max-width: 1900px) {
   .obrazos {
     left: 17%;
@@ -1734,6 +1739,7 @@ ul li a:hover:nth-child(4) {
   }
 }
 @media only screen and (max-width: 1800px) {
+
   .obrazos {
     left: 19%;
     top: 143%;
@@ -2271,9 +2277,4 @@ ul li a:hover:nth-child(4) {
     .neon {
       top: 92.5%;
     }
-}
-@media only screen and (width: 1920px) and (height: 1080px) {
-  .neon {
-    top: 969px;
-  }
 }
